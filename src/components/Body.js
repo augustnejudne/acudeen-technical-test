@@ -7,12 +7,12 @@ import filledStar from '../assets/star_rating_fill.svg';
 const Body = props => {
   return (
     <div className="acudeen-card__body">
-      <div className="acudeen-card__body__amount">PHP 450,000.00</div>
+      <div className="acudeen-card__body__amount">PHP {props.amount}</div>
       <div className="acudeen-card__body__company">
         <div className="acudeen-card__body__company__logo">
           <img src={companyLogo} alt="company logo" />
         </div>
-        <div className="acudeen-card__body__company__name">JKSG Company</div>
+        <div className="acudeen-card__body__company__name">{props.companyName}</div>
       </div>
       <h4 className="text-center pt-5">Rating:</h4>
       <div className="acudeen-card__body__rating">

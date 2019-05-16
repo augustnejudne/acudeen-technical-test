@@ -6,15 +6,15 @@ const App = props => {
     <div className="container">
       <div className="row justify-content-center">
         <div className="col py-5">
-          <Card bidStatus="no bid" />
+          <Card bidStatus="no bid" amount="450,000.00" companyName="JKSG Company"/>
         </div>
         <div className="col py-5">
-          <Card bidStatus="hot" />
+          <Card bidStatus="hot" amount="375,000.00" companyName="ABCD Company"/>
         </div>
         <div className="col py-5">
-          <Card bidStatus="sold" />
+          <Card bidStatus="sold" amount="522,000.00" companyName="EFGH Company"/>
         </div>
-        <div style={{height: '2000px'}} />
+        <div style={{ height: '2000px' }} />
       </div>
     </div>
   );

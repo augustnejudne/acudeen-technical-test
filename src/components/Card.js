@@ -8,7 +8,7 @@ const Card = props => {
   return (
     <div className="acudeen-card">
       <Header bidStatus={props.bidStatus} />
-      <Body />
+      <Body amount={props.amount} companyName={props.companyName}/>
       <BidAmountDetails />
       <OtherDetails />
     </div>
