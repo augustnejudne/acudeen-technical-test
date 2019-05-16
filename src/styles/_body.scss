@@ -1,0 +1,67 @@
+.acudeen-card__body {
+  padding: 0 3rem;
+  &__amount {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  &__company {
+    display: flex;
+    align-items: center;
+    &__logo {
+      width: 5rem;
+    }
+
+    &__name {
+      font-size: 2rem;
+      font-weight: 700;
+      padding-left: 1rem;
+    }
+  }
+
+  h4 {
+    font-weight: 700;
+  }
+
+  &__rating {
+    border-bottom: 1px solid #ececec;
+    margin: 0 1rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 1.4rem;
+
+    &__rater {
+      // border: 1px solid red;
+      text-align: right;
+      margin: 0 auto;
+
+      div {
+        padding: 0.5rem 0;
+        img {
+          height: 1.5rem;
+        }
+      }
+    }
+
+    &__stars {
+      &--container {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        padding: 5px 0;
+        .rating-letters {
+          text-align: right;
+          padding-right: 3px;
+        }
+        .stars {
+          img {
+            height: 1.5rem;
+            transform: translateY(-2px);
+          }
+        }
+      }
+    }
+  }
+}

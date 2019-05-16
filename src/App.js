@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Card from './components/Card.js';
 
-function App() {
+const App = props => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="row justify-content-center">
+        <div className="col py-5">
+          <Card bidStatus="no bid" />
+        </div>
+        <div className="col py-5">
+          <Card bidStatus="hot" />
+        </div>
+        <div className="col py-5">
+          <Card bidStatus="sold" />
+        </div>
+        <div style={{height: '2000px'}} />
+      </div>
     </div>
   );
-}
+};
 
 export default App;

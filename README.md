@@ -1,68 +1,59 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Task:
 
-## Available Scripts
+Acudeen is redesigning its marketplace interface. Changes include additional UI elements and behavior in its “invoice card”.
 
-In the project directory, you can run:
+As a Web Developer, you were tasked to convert the UI design produced by UI/UX Designer into a webpage which will be used as template by front-end developers.
 
-### `npm start`
+The output should match the expected webpage as described in the attached files.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ReactJS must be used to break big component into smaller components and to pass applicable parameters needed to achieve elements’ behaviors.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+It must follow design standards and best practices.
 
-### `npm test`
+ 
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Key Technologies to use:
 
-### `npm run build`
+HTML/CSS – the basic of web application
+Bootstrap – front-end component library for building responsive UI
+ReactJS – JS library for building interactive UI
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ 
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+UI Elements and expected behavior:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ 
 
-### `npm run eject`
+Bid Status Indicator
+    Label to indicate different bid status (“No Bid”, “Hot”, “Sold”) 
+Auction Remaining Time
+    Time countdown not in the scope of this exam 
+Feature Indicator
+    An image indicating special feature of the invoice being sold 
+Amount
+Company Logo
+Company Name
+Rating Name
+Rating Value
+    Rating showing the quality of the invoice represented by stars  (1 star = bad, 5 stars = best)
+Feature Fee
+Feature Toggle Button
+    On/Off toggle button (ON: green color; OFF: grey color) 
+Bid Amount
+Bid Amount Adjust Button
+    Increase the value of Bid Amount by 1,000 every time the button is clicked 
+Bid Button
+    Show a Toast message “Bid has been placed successfully.” when the button is clicked
+Net Profit
+Other Details Collapse Button
+    Toggle “Other Details Panel” when clicked 
+Other Details Panel
+    Collapsed by default; contains other details related to the item. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Let me know if you have any questions. I’m looking forward to work with you.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Best,

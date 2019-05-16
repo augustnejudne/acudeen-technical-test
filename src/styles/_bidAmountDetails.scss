@@ -1,0 +1,109 @@
+.acudeen-card__bid-amount-details {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+
+  h4 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+
+  &__acu-go {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: end;
+    text-align: center;
+    margin-top: 1.2rem;
+    margin-bottom: 2rem;
+
+    .acu-go-fee {
+      &__price {
+        font-weight: 700;
+        padding-bottom: 3px;
+      }
+
+      &__label {
+        font-weight: 400;
+        font-size: 1.2rem;
+      }
+    }
+
+    .enable-acu-go {
+      &__switch {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: white;
+        .switch-on {
+          position: absolute;
+          left: 8px;
+          top: 1px;
+        }
+
+        .switch-off {
+          position: absolute;
+          left: -4px;
+          top: 1px;
+        }
+      }
+      &__label {
+        font-weight: 400;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__bid {
+    .bid-prepend {
+      span {
+        font-size: 3rem;
+        color: #ccc;
+        line-height: 0;
+      }
+    }
+
+    .bid-input {
+      height: 4rem;
+      font-size: 2rem;
+      text-align: center;
+      appearance: textfield;
+    }
+
+    .bid-append {
+      span {
+        font-size: 3rem;
+        color: #2d619a;
+        line-height: 0;
+      }
+    }
+
+    .bid-btn {
+      background: #2d619a;
+      border-color: #2d619a;
+      width: 8rem;
+      margin-left: 1rem;
+      font-size: 1.8rem;
+
+      &:hover {
+        filter: brightness(120%);
+      }
+    }
+  }
+
+  &__net-profit {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+
+    .label {
+      font-size: 1.3rem;
+    }
+
+    .amount {
+      padding-left: 1rem;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+}
