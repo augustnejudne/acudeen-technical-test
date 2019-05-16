@@ -1,18 +1,18 @@
 import React from 'react';
-import companyLogo from '../assets/no_payor_logo.svg';
+import StarRating from './StarRating';
 import infoQuestion from '../assets/info_question.svg';
-import emptyStar from '../assets/star_rating_empty.svg';
-import filledStar from '../assets/star_rating_fill.svg';
 
-const Body = props => {
+const Body = ({amount, companyLogo, companyName, stars}) => {
   return (
     <div className="acudeen-card__body">
-      <div className="acudeen-card__body__amount">PHP {props.amount}</div>
+      <div className="acudeen-card__body__amount">PHP {amount}</div>
       <div className="acudeen-card__body__company">
         <div className="acudeen-card__body__company__logo">
           <img src={companyLogo} alt="company logo" />
         </div>
-        <div className="acudeen-card__body__company__name">{props.companyName}</div>
+        <div className="acudeen-card__body__company__name">
+          {companyName}
+        </div>
       </div>
       <h4 className="text-center pt-5">Rating:</h4>
       <div className="acudeen-card__body__rating">
@@ -28,42 +28,9 @@ const Body = props => {
           </div>
         </div>
         <div className="acudeen-card__body__rating__stars">
-          <div className="acudeen-card__body__rating__stars--container">
-            <span className="rating-letters">
-              A
-            </span>
-            <span className="stars">
-              <img src={filledStar} alt="empty star" />
-              <img src={filledStar} alt="empty star" />
-              <img src={filledStar} alt="empty star" />
-              <img src={filledStar} alt="empty star" />
-              <img src={emptyStar} alt="empty star" />
-            </span>
-          </div>
-          <div className="acudeen-card__body__rating__stars--container">
-            <span className="rating-letters">
-              BB
-            </span>
-            <span className="stars">
-              <img src={filledStar} alt="empty star" />
-              <img src={filledStar} alt="empty star" />
-              <img src={filledStar} alt="empty star" />
-              <img src={emptyStar} alt="empty star" />
-              <img src={emptyStar} alt="empty star" />
-            </span>
-          </div>
-          <div className="acudeen-card__body__rating__stars--container">
-            <span className="rating-letters">
-              BB
-            </span>
-            <span className="stars">
-              <img src={filledStar} alt="empty star" />
-              <img src={filledStar} alt="empty star" />
-              <img src={filledStar} alt="empty star" />
-              <img src={emptyStar} alt="empty star" />
-              <img src={emptyStar} alt="empty star" />
-            </span>
-          </div>
+          {stars.map((s, i) => (
+            <StarRating key={i} initStars={s} />
+          ))}
         </div>
       </div>
     </div>

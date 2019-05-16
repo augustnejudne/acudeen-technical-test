@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Switch from 'react-switch';
 
-const BidAmountDetails = props => {
+const BidAmountDetails = ({bidAmount}) => {
   const [checked, setChecked] = useState(false);
 
   return (
@@ -9,7 +9,7 @@ const BidAmountDetails = props => {
       <h4>Bid Amount Details</h4>
       <div className="acudeen-card__bid-amount-details__acu-go">
         <div className="acu-go-fee">
-          <div className="acu-go-fee__price">PHP 4,500.00</div>
+          <div className="acu-go-fee__price">PHP {bidAmount}</div>
           <div className="acu-go-fee__label">ACU GO Fee</div>
         </div>
         <div className="enable-acu-go">

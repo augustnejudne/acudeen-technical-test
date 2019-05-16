@@ -4,12 +4,12 @@ import Body from './Body';
 import BidAmountDetails from './BidAmountDetails';
 import OtherDetails from './OtherDetails';
 
-const Card = props => {
+const Card = ({bidStatus, amount, companyLogo, companyName, stars, bidAmount}) => {
   return (
     <div className="acudeen-card">
-      <Header bidStatus={props.bidStatus} />
-      <Body amount={props.amount} companyName={props.companyName}/>
-      <BidAmountDetails />
+      <Header bidStatus={bidStatus} />
+      <Body amount={amount} companyLogo={companyLogo} companyName={companyName} stars={stars}/>
+      <BidAmountDetails bidAmount={bidAmount} />
       <OtherDetails />
     </div>
   );
