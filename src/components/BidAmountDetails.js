@@ -3,6 +3,18 @@ import Switch from 'react-switch';
 
 const BidAmountDetails = ({bidAmount}) => {
   const [checked, setChecked] = useState(false);
+  const [bidInputAmount, setBidInputAmount] = useState(bidAmount)
+  const [bidInput, setBidInput] = useState('');
+
+  const increaseBidAmount = () => {
+    const bidInputAmountFloat = parseFloat(bidInputAmount.replace(/,/, ''));
+    setBidInputAmount((bidInputAmountFloat + 1000).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,') + '.00');
+  }
+
+  const decreaseBidAmount= () => {
+    const bidInputAmountFloat = parseFloat(bidInputAmount.replace(/,/, ''));
+    setBidInputAmount((bidInputAmountFloat - 1000).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,') + '.00');
+  }
 
   return (
     <div className="acudeen-card__bid-amount-details">
@@ -28,7 +40,7 @@ const BidAmountDetails = ({bidAmount}) => {
       </div>
       <div className="acudeen-card__bid-amount-details__bid">
         <div className="input-group mb-3">
-          <div className="input-group-prepend bid-prepend">
+          <div className="input-group-prepend bid-prepend" onClick={() => decreaseBidAmount()}>
             <span className="input-group-text" id="basic-addon1">
               &minus;
             </span>
@@ -36,9 +48,11 @@ const BidAmountDetails = ({bidAmount}) => {
           <input
             type="number"
             className="form-control form-control-lg bid-input"
-            placeholder="PHP 440,253.00"
+            placeholder={`PHP ${bidInputAmount}`}
+            value={bidInput}
+            onChange={(e) => {setBidInput(e.target.value)}}
           />
-          <div className="input-group-append bid-append">
+          <div className="input-group-append bid-append" onClick={() => increaseBidAmount()}>
             <span className="input-group-text" id="basic-addon1">
               &#43;
             </span>
