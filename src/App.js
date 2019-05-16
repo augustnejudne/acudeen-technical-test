@@ -36,7 +36,6 @@ const App = props => {
             bidAmount="6,500.00"
           />
         </div>
-        <div style={{ height: '2000px' }} />
       </div>
     </div>
   );
